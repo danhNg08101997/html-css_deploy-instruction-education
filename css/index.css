@@ -1,0 +1,68 @@
+.header {
+  background-color: #ff4f81;
+}
+.header-left i {
+  margin-right: 8px;
+}
+.header-right i {
+  font-size: 14px;
+  padding: 8px 10px;
+  background-color: #333333;
+  margin-left: 2px;
+  border: 1px solid transparent;
+  transition: all 0.5s linear;
+}
+.header-right i:hover {
+  background-color: #ff4f81;
+  border: 1px solid #fff;
+}
+.navbar-brand--logo p {
+  color: #ff4f81;
+  font-size: 0.8em;
+  margin-top: -5px;
+}
+.navbar-nav--menu{
+    margin-top: -30px;
+}
+.navbar-nav--menu .nav-item {
+  margin-left: 20px;
+}
+.navbar-nav--menu .nav-item .nav-link {
+  font-weight: 700;
+  color: #333333;
+}
+.navbar-nav--menu .nav-item:hover > .nav-link {
+  color: #ff4f81;
+}
+.navbar-nav--menu .nav-item .nav-item__line {
+  width: 0%;
+  height: 2px;
+  background-color: #ff4f81;
+}
+.navbar-nav--menu .nav-item:hover > .nav-item__line {
+  width: 100%;
+}
+.navbar-nav--menu .nav-item .nav-link,
+.navbar-nav--menu .nav-item .nav-item__line {
+  transition: all 0.3s linear;
+}
+.navbar-nav--menu .nav-item.active .nav-link{
+    color: #ff4f81 !important;
+}
+.navbar-nav--menu .nav-item.active .nav-item__line{
+    width: 100%;
+}
+
+/* Reponsive point */
+@media screen and (min-width:768px) and (max-width:992px){
+    .navbar-brand--logo h1{
+        font-size: 28px;
+    }
+    .navbar-nav--menu .nav-item{
+        margin-left: 0;
+    }
+    .navbar-nav--menu .nav-item:first-child {
+        margin-left: 10px;
+      }
+    
+}
