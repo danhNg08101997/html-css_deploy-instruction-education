@@ -1,4 +1,18 @@
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Geologica:wght@300;400;500;600;700;900&display=swap");
+/* START RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bruno Ace SC", cursive;
+  font-family: "Geologica", sans-serif;
+}
+/* END RESET CSS */
+
+/* START HEADER */
+#header {
   background-color: #ff4f81;
 }
 .header-left i {
@@ -16,13 +30,16 @@
   background-color: #ff4f81;
   border: 1px solid #fff;
 }
+/* END HEADER */
+
+/* START NAVBAR */
 .navbar-brand--logo p {
   color: #ff4f81;
   font-size: 0.8em;
   margin-top: -5px;
 }
-.navbar-nav--menu{
-    margin-top: -30px;
+.navbar-nav--menu {
+  margin-top: -30px;
 }
 .navbar-nav--menu .nav-item {
   margin-left: 20px;
@@ -46,23 +63,171 @@
 .navbar-nav--menu .nav-item .nav-item__line {
   transition: all 0.3s linear;
 }
-.navbar-nav--menu .nav-item.active .nav-link{
-    color: #ff4f81 !important;
+.navbar-nav--menu .nav-item.active .nav-link {
+  color: #ff4f81 !important;
 }
-.navbar-nav--menu .nav-item.active .nav-item__line{
-    width: 100%;
+.navbar-nav--menu .nav-item.active .nav-item__line {
+  width: 100%;
+}
+/* END NAVBAR */
+
+/* START CAROUSEL */
+.carousel-caption--config {
+  bottom: 30%;
+}
+.carousel-caption--config h1 {
+  font-weight: normal;
+  font-size: 3.3em;
+}
+.carousel-caption--config p {
+  font-size: 1.1em;
+  letter-spacing: 4px;
+  line-height: 1.3em;
+}
+.carousel-indicators--config {
+  bottom: 20%;
+}
+.btn--read-more {
+  border-radius: 0;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+.btn--read-more:hover {
+  background-color: #ff4f81;
+  border-color: #ff4f81;
+  color: #fff;
+}
+.modal-header--carousel h1 {
+  color: #ff4f81;
+  font-size: 2em;
+  font-weight: bold;
+}
+.modal-text {
+  letter-spacing: 4px;
+  line-height: 1.5em;
+  font-weight: 200;
+}
+/* END CAROUSEL */
+
+/* START EDUCATION */
+#education {
+  padding: 3rem 0;
+}
+.welcome-title h1 {
+  color: #ff4f81;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.welcome-title span {
+  font-size: 17px;
+  letter-spacing: 4px;
+}
+.welcome-title__line {
+  width: 150px;
+  height: 2px;
+  background-color: #333333;
+}
+.welcome-title p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8em;
+  letter-spacing: 2px;
+  color: #999;
+  padding: 0 10%;
+}
+.course-item i {
+  font-size: 30px;
+}
+.course-item h2{
+  color: #ff4f81;
+  font-size: 30px;
+  font-weight: 500;
+}
+.course-item h4{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.course-item span{
+  font-size: 16px;
+  font-weight: 300;
+  color: #999;
+  margin-bottom: 10px;
+  display: block;
+
 }
 
-/* Reponsive point */
-@media screen and (min-width:768px) and (max-width:992px){
-    .navbar-brand--logo h1{
-        font-size: 28px;
-    }
-    .navbar-nav--menu .nav-item{
-        margin-left: 0;
-    }
-    .navbar-nav--menu .nav-item:first-child {
-        margin-left: 10px;
-      }
-    
+/* END EDUCATION */
+
+/* RESPOINSIVE POINT */
+/* Large screen */
+@media only screen and (max-width: 1200px) {
 }
+/* Laptop screen */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* navbar */
+  .navbar-brand--logo h1 {
+    font-size: 28px;
+  }
+  .navbar-nav--menu .nav-item {
+    margin-left: 0;
+  }
+  .navbar-nav--menu .nav-item:first-child {
+    margin-left: 10px;
+  }
+  /* carousel */
+  .carousel-caption--config {
+    bottom: 25%;
+  }
+  .carousel-indicators--config {
+    bottom: 10%;
+  }
+  .carousel-caption--config h1 {
+    font-weight: normal;
+    font-size: 2.5em;
+  }
+  .carousel-caption--config p {
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+  }
+}
+/* Tablet screen  */
+@media only screen and (max-width: 768px) {
+  /* carousel */
+  .carousel-caption--config {
+    bottom: 25%;
+  }
+  .carousel-indicators--config {
+    bottom: 10%;
+  }
+  .carousel-caption--config h1 {
+    font-weight: normal;
+    font-size: 2em;
+  }
+  .carousel-caption--config p {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+}
+/* Mobile screen */
+@media only screen and (max-width: 600px) {
+  /* carousel */
+  .carousel-caption--config {
+    bottom: 15%;
+  }
+  .carousel-indicators--config {
+    bottom: 0;
+  }
+  .carousel-caption--config h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+  .carousel-caption--config p {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+}
+/* RESPOINSIVE POINT */
