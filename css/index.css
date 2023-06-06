@@ -111,7 +111,7 @@ body {
 
 /* START EDUCATION */
 #education {
-  padding: 3rem 0;
+  padding: 3rem;
 }
 .welcome-title h1 {
   color: #ff4f81;
@@ -139,22 +139,21 @@ body {
 .course-item i {
   font-size: 30px;
 }
-.course-item h2{
+.course-item h2 {
   color: #ff4f81;
   font-size: 30px;
   font-weight: 500;
 }
-.course-item h4{
+.course-item h4 {
   font-size: 18px;
   margin-bottom: 5px;
 }
-.course-item span{
+.course-item span {
   font-size: 16px;
   font-weight: 300;
   color: #999;
   margin-bottom: 10px;
   display: block;
-
 }
 
 /* END EDUCATION */
@@ -210,6 +209,16 @@ body {
     letter-spacing: 2px;
     margin-bottom: 0;
   }
+  .course-item h2 {
+    font-size: 20px;
+  }
+  .course-item h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .course-item span {
+    font-size: 13px;
+  }
 }
 /* Mobile screen */
 @media only screen and (max-width: 600px) {
@@ -228,6 +237,23 @@ body {
     font-size: 0.8em;
     letter-spacing: 2px;
     margin-bottom: 0;
+  }
+  /* Education */
+  #education {
+    padding: 3rem 0;
+  }
+  .welcome-title h1 {
+    font-size: 25px;
+  }
+  .welcome-title span {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .welcome-title__line {
+    width: 50%;
+  }
+  .welcome-title p {
+    padding: 0 5%;
   }
 }
 /* RESPOINSIVE POINT */
